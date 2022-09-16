@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 90vh;
+            width: 100%;
+            background-color: blueviolet;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            
+        }
+        h3{
+            color: azure;
+            font-size: 50px;
+            position: absolute;
+            top:35%;
+            left:35%;
+            animation: TT;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+        @keyframes TT {
+            0%{
+                top:-100%;
+                font-size: 50px;
+                opacity: 0;
+                transform: rotate(180deg);
+            }
+            100%{
+                top:35%;
+                font-size: 80px;
+                color: aqua;
+                letter-spacing: 10px;
+                transform: scale(2);
+                opacity: 1;
+                transform: rotate(360eg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>Hello World</h3>
+    </div>
+
+</body>
+
+</html>
